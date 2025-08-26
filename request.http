@@ -1,0 +1,10 @@
+
+### Make an embeddings request to the Snow College AI Server
+### Install the REST Client by Huachao Mao to make a request
+curl -X POST https://ai-snow.reindeer-pinecone.ts.net/ollama/api/embed \
+-H "Authorization: Bearer {{$dotenv AI_TOKEN}}" \
+-H "Content-Type: application/json" \
+-d '{
+  "model": "nomic-embed-text:latest",
+  "input": ["Hello, world!", "My name is Thomas!"]
+}'
